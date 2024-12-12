@@ -1,0 +1,56 @@
+<div class="spectrum-Examples">
+        <div class="spectrum-Examples-item">
+          <div class="spectrum-Examples-itemGroup" style="min-height: 240px;">
+            <div class="spectrum-Combobox {is_open} {is_loading}">
+              <div class="spectrum-Textfield spectrum-Combobox-textfield {is_loading}">
+                <input
+                  type="text"
+                  name="field"
+                  bind:value={input_text}
+                  class="spectrum-Textfield-input spectrum-Combobox-input"
+                  autocomplete="off"
+                />
+                <!-- <div class="spectrum-ProgressCircle spectrum-ProgressCircle--indeterminate spectrum-ProgressCircle--small spectrum-Combobox-progress-circle">
+                  <div class="spectrum-ProgressCircle-track"></div>
+                  <div class="spectrum-ProgressCircle-fills">
+                    <div class="spectrum-ProgressCircle-fillMask1">
+                      <div class="spectrum-ProgressCircle-fillSubMask1">
+                        <div class="spectrum-ProgressCircle-fill"></div>
+                      </div>
+                    </div>
+                    <div class="spectrum-ProgressCircle-fillMask2">
+                      <div class="spectrum-ProgressCircle-fillSubMask2">
+                        <div class="spectrum-ProgressCircle-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <button
+                tabindex="-1"
+                class="spectrum-PickerButton spectrum-PickerButton--sizeM spectrum-PickerButton--uiicononly spectrum-PickerButton--right spectrum-Combobox-button {is_open} {is_loading}"
+                aria-haspopup="listbox"
+              >
+                <div class="spectrum-PickerButton-fill">
+                  <svg
+                    class="spectrum-PickerButton-icon spectrum-Icon spectrum-UIIcon-ChevronDown200"
+                    focusable="false"
+                    aria-hidden="true"
+                  >
+                    <use xlink:href="#spectrum-css-icon-Chevron200" />
+                  </svg>
+                </div>
+              </button>
+              <div
+                class="spectrum-Popover spectrum-Popover--bottom {is_open}"
+                style="position: absolute; top: 100%; left: 0; width: 100%;"
+              >
+                <ul class="spectrum-Menu" role="listbox">
+                  {@html a}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

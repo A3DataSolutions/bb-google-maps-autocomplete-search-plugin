@@ -1,0 +1,153 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "google-maps-autocomplete-search",
+    "friendlyName": "google-maps-autocomplete-search",
+    "description": "A component which allows you to use google maps autocomplete to search for addresses.",
+    "icon": "Text",
+    "hasChildren": true,
+    "settings": [
+      {
+        "type": "field/bb_reference_single",
+        "label": "Field",
+        "key": "field",
+        "required": true
+      },
+      {
+        "type": "dataProvider",
+        "label": "Data provider",
+        "key": "autocomplete_dp",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Key Column",
+        "key": "key_column",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Label Column",
+        "key": "label_column",
+        "required": true
+      },
+      {
+        "type": "event",
+        "key": "ady_selection",
+        "label": "On Selection",
+        "context": [
+          {
+            "label": "Place ID",
+            "key": "place_id"
+          },
+          {
+            "label": "Session Token",
+            "key": "sessiontoken"
+          }
+        ]
+      },
+      {
+        "type": "event",
+        "key": "on_change_event",
+        "label": "On Change",
+        "context": [
+          {
+            "label": "Place ID",
+            "key": "place_id"
+          },
+          {
+            "label": "Session Token",
+            "key": "sessiontoken"
+          }
+        ]
+      },
+      {
+        "type": "event",
+        "key": "on_blur_event",
+        "label": "On Blur",
+        "context": [
+          {
+            "label": "Place ID",
+            "key": "place_id"
+          },
+          {
+            "label": "Session Token",
+            "key": "sessiontoken"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Label",
+        "key": "label",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Placeholder",
+        "key": "placeholder",
+        "required": false,
+        "default": "Enter an address"
+      },
+      {
+        "type": "text",
+        "label": "Default Value",
+        "key": "value",
+        "required": false
+      },
+      {
+        "type": "text",
+        "label": "No Values Msg",
+        "key": "no_values_msg",
+        "required": false
+      },
+      {
+        "type": "boolean",
+        "label": "Disabled",
+        "key": "disabled",
+        "required": false
+      },
+      {
+        "type": "boolean",
+        "label": "Read Only",
+        "key": "readonly",
+        "required": false
+      },
+      {
+        "type": "select",
+        "label": "Label Position",
+        "key": "labelPosition",
+        "options": [
+          "above","left","right"
+        ]
+      }
+   
+    ],
+    "context": [
+      {
+        "type": "static",
+        "values": [
+          {
+            "label": "Input",
+            "key": "value",
+            "type": "text",
+            "defaultValue": ""
+          },
+          {
+            "label": "Session Token",
+            "key": "sessiontoken",
+            "type": "text",
+            "defaultValue": ""
+          },
+          {
+            "label": "Selected Place ID",
+            "key": "place_id",
+            "type": "text",
+            "defaultValue": ""
+          }
+        ]
+      }
+    ]
+  }
+}
